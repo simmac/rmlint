@@ -5,6 +5,10 @@ install:
     - brew install python3
     - brew install scons
     - brew install glib
+    - brew install sphinx
+    - brew install gtk+
+    - brew install libelf
+    - brew install pygobject
 
 compiler:
   - clang

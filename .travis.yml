@@ -1,18 +1,13 @@
+os: osx
 language: c
 install: 
-    - sudo apt-get update
-    - sudo apt-get install python3-sphinx python3-nose gettext python3-setuptools 
-    - sudo apt-get install libblkid-dev libelf-dev libglib2.0-dev libjson-glib-dev
+    - brew update
+    - brew install python3
+    - brew install scons
 
 compiler:
   - clang
   - gcc
-
-notifications:
-  email:
-    - sahib@online.de
-    - thomas_d_j@yahoo.com.au
-
 script: 
     - scons VERBOSE=1 
     - scons config
